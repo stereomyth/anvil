@@ -1,0 +1,31 @@
+/*=============================================================*/
+/*                                                             */
+/*                Jim's less css3 Mixins                       */
+/*                                                             */
+/*=============================================================*/
+
+.linGrad(@colour1:lightgray,@colour2:darkgray){
+    background-color: @colour1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@colour1), to(@colour2)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, @colour1, @colour2); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, @colour1, @colour2); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, @colour1, @colour2); /* IE10 */
+    background-image:      -o-linear-gradient(top, @colour1, @colour2); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, @colour1, @colour2);
+}
+.borderRad (@radius:5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.shadow(@shadow:1px 1px 5px #555){
+    -webkit-box-shadow: @shadow;
+    -moz-box-shadow: @shadow;
+    box-shadow: @shadow;
+}
+.trans(@transitions:all .2s linear){
+    -webkit-transition: @transitions;
+    -moz-transition: @transitions;
+    -o-transition: @transitions;
+    transition: @transitions;
+}

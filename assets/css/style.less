@@ -1,0 +1,124 @@
+/* =============================================================== */
+/*                   The Crystallise HTML Reset                    */
+/*            DERIVED FROM HTML5 BOILER PLATE (h5bp.com)           */
+/*           Amended by Crystal (crystalpresentations.com)         */
+/* Thanks to H5BP, Normalise.css, PX2EM and Eric Meyer's CSS Reset */
+/* =============================================================== */
+
+@import "../font/fonts";
+/* web fonts */
+@import "less/normalize";
+/* reset css */
+@import "less/mixins";
+/* foundation grid uncomment if required */
+
+@highlight: orange;
+/* changes text highlight colour inside of normalize1 */
+
+/* =============================================================================
+   Primary Styles
+   ========================================================================== */
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #eee;
+    overflow-y: scroll;
+}
+#wrapper {
+    margin: auto;
+    overflow: auto;
+    width: 1185px;
+}
+#controlPanel {
+    width: 380px;
+    margin: 40px 0px;
+    padding: 40px;
+    background: white;
+    float: left;
+    z-index: 100;
+    .shadow();
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: inline-block;
+}
+#previewArea {
+    float: left;
+    height: 700px;
+    width: 750px;
+    background: red;
+    margin: 40px 0px;
+    margin-right: 50px;
+    .shadow();
+}
+input[type=submit] {
+    width: 100%;
+    padding: 7px 0;
+    margin: 5px 0;
+}
+#emailTitle {
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+#emailSelect {
+    margin: 0 10px;
+    width: 110px;
+}
+.testWho {
+    overflow: auto;
+    input[type=checkbox] {
+        margin: 5px 5px 5px 7px;
+    }
+}
+.keys {
+    margin: 20px;
+    #turn {
+        margin: 0 69px;
+    }
+}
+
+#feedback {
+    display: none;
+    border: 1px solid gray;
+    background: lightgray;
+    padding: 10px;
+    margin-top: 20px;
+    &.error {
+        background: #f2dede;
+        border-color: #ee9fa2;
+        color: #cc4a48;
+    }
+    &.warning {
+        background: #ffffe0;
+        border-color: yellow;
+        color: yellow;
+    }
+    &.success {
+        background: #dff0d8;
+        border-color: #a7e99a;
+        color: #468878;
+    }
+}
+
+/* =============================================================================
+   media queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+/* Style adjustments for view-ports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+/* Style adjustments for view-ports 768px and over go here */
+
+}
+
+//@import "less/validation"; /* form validation styles  uncomment if required*/
+@import "less/normalize2";
+/* non semantic helper and Print styles */

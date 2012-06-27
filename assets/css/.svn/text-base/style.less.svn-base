@@ -1,0 +1,35 @@
+/* =============================================================== */
+/*                   The Crystallise HTML Reset                    */
+/*            DERIVED FROM HTML5 BOILER PLATE (h5bp.com)           */
+/*           Amended by Crystal (crystalpresentations.com)         */
+/* Thanks to H5BP, Normalise.css, PX2EM and Eric Meyer's CSS Reset */
+/* =============================================================== */
+
+@import "../font/fonts"; /* web fonts */
+@import "less/normalize"; /* reset css */
+//@import "less/grid"; /* foundation grid uncomment if required */
+
+@highlight: orange; /* changes text highlight colour inside of normalize1 */
+
+/* =============================================================================
+   Primary Styles
+   ========================================================================== */
+
+
+
+/* =============================================================================
+   media queries for Responsive Design.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for view-ports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for view-ports 768px and over go here */
+
+}
+
+//@import "less/validation"; /* form validation styles  uncomment if required*/
+@import "less/normalize2"; /* non semantic helper and Print styles */
